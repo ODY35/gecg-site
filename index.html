@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="theme-color" content="#084010">
+<link rel="icon" href="assets/logo-sm.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gabonese Entrepreneurs Club in Ghana | GECG</title>
+<meta name="description" content="GECG brings Gabonese entrepreneurs in Ghana together: support, formalisation, training, visibility and partnerships. Join the club or partner with us.">
+<meta property="og:title" content="Gabonese Entrepreneurs Club in Ghana">
+<meta property="og:description" content="A structured, visible and influential entrepreneurial network for Gabonese entrepreneurs in Ghana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#006B3F;--forest-d:#084010;--leaf:#A5AFB1;--leaf-l:#E9EEEA;--black:#1A1A1A;--gray:#555E60;--gray-l:#F3F5F5;--line:#D5DBDC;--white:#fff;--yellow:#FBC50B;--red:#CF1228;
+--h:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;--b:'Inter','Segoe UI',Arial,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--b);color:var(--black);background:var(--white);line-height:1.65;font-size:1.0625rem}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--black);outline-offset:3px;box-shadow:0 0 0 3px #fff}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+h1,h2,h3{font-family:var(--h);line-height:1.1}
+h2{font-size:clamp(1.9rem,4.4vw,3rem);margin-bottom:1rem}
+h1,h2{text-transform:uppercase;letter-spacing:.03em}
+h3{font-size:1.25rem;margin-bottom:.4rem}
+p{max-width:65ch}
+section{padding:clamp(3.5rem,8vw,6rem) 0}
+.skip{position:absolute;left:-999px;background:var(--leaf);color:var(--black);padding:.7rem 1rem;z-index:99}
+.skip:focus{left:1rem;top:1rem}
+.btn{display:inline-block;padding:.85rem 1.5rem;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s}
+.btn-leaf{background:var(--white);color:var(--forest-d)}.btn-leaf:hover{background:var(--leaf)}
+.btn-line{border-color:var(--white);color:var(--white)}.btn-line:hover{background:var(--white);color:var(--forest-d)}
+.btn-forest{background:var(--forest);color:var(--white)}.btn-forest:hover{background:var(--forest-d)}
+.btn-out{border-color:var(--forest);color:var(--forest)}.btn-out:hover{background:var(--forest);color:var(--white)}
+.actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+/* header */
+header{position:sticky;top:0;z-index:50;background:var(--forest-d);color:var(--white)}
+.bar{display:flex;align-items:center;justify-content:space-between;min-height:68px}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;font-family:var(--h);font-weight:700;font-size:1.2rem}
+.mark{width:44px;height:44px;border-radius:50%;background:#fff;display:block}
+nav ul{display:flex;gap:1.6rem;list-style:none;padding:0}
+nav a{text-decoration:none;font-weight:500;padding:.4rem 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--leaf)}
+.menu{display:none;background:none;border:2px solid var(--leaf);color:var(--white);border-radius:8px;padding:.45rem .8rem;font:inherit;cursor:pointer}
+/* hero */
+.hero{background:var(--forest);color:var(--white);padding:clamp(3.5rem,9vw,7rem) 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:2rem;align-items:center}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:800}
+.hero .tag{color:#fff;letter-spacing:.06em;text-transform:uppercase;font-weight:600;margin-bottom:1rem}
+.hero p.lead{font-size:1.2rem;margin-top:1.2rem;color:#DCEBE0}
+.net{width:100%;height:auto}
+.net line{stroke:var(--leaf);stroke-width:1.5;opacity:.55}
+.net circle{fill:var(--leaf)}.net .big{fill:var(--white)}
+.pulse{animation:pulse 3s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
+@keyframes pulse{50%{transform:scale(1.35)}}
+/* about */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,4rem)}
+.vm{display:grid;gap:1rem}
+.vm div{background:var(--leaf-l);border-left:5px solid var(--forest);padding:1.2rem 1.4rem;border-radius:0 12px 12px 0}
+.vm p{color:var(--gray)}
+.words{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.words span{background:var(--forest);color:var(--white);border-radius:999px;padding:.3rem .95rem;font-size:.95rem}
+/* cards */
+.alt{background:var(--gray-l)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.2rem;margin-top:2rem}
+.card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:1.5rem}
+.card h3{color:var(--forest)}
+.card p{color:var(--gray);font-size:1rem}
+.card .ic{width:44px;height:44px;border-radius:12px;background:var(--leaf-l);color:var(--forest);display:grid;place-items:center;margin-bottom:1rem;font-family:var(--h);font-weight:800}
+/* pillars + roadmap */
+.dark{background:var(--black);color:var(--white)}
+.dark h2{color:var(--white)}.dark p{color:#C5CBC7}
+.pillars{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.6rem 0 3rem;padding:0;list-style:none}
+.pillars li{border:1.5px solid var(--leaf);color:var(--leaf);border-radius:999px;padding:.45rem 1.1rem;font-weight:500}
+.road{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;counter-reset:p;position:relative}
+.road article{background:#262B2B;border-top:4px solid var(--leaf);border-radius:0 0 12px 12px;padding:1.3rem;counter-increment:p}
+.road h3{color:var(--white)}
+.road .ph{color:var(--leaf);font-weight:600;font-size:.9rem;margin-bottom:.5rem}
+.road .ph::before{content:"Phase " counter(p)}
+.road p{font-size:.95rem}
+.road .mo{color:var(--gray);font-size:.85rem;margin-top:.8rem}
+/* story */
+.story .two{align-items:start}
+.story blockquote{font-family:var(--h);font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.25;color:var(--forest);font-weight:700}
+.story p+p{margin-top:1rem}
+.story h3{margin-top:2rem;color:var(--forest)}
+/* programmes */
+.prog .card{border-top:4px solid var(--leaf)}
+.prog .sub{font-weight:600;color:var(--black);margin-bottom:.5rem}
+/* team */
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1.2rem;margin-top:2rem}
+.person{text-align:center}
+.avatar{aspect-ratio:1;border-radius:50%;background:var(--forest);color:#fff;display:grid;place-items:center;font-family:var(--h);font-weight:800;font-size:2.2rem;margin-bottom:.8rem;overflow:hidden;border:4px solid var(--leaf-l)}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.person h3{font-size:1.05rem;margin:0}
+.person p{color:var(--gray);font-size:.95rem;margin-inline:auto}
+/* join */
+.join{background:var(--forest);color:var(--white);text-align:center}
+.join p{margin-inline:auto;color:#DCEBE0}
+.join .actions{justify-content:center}
+/* footer */
+footer{background:var(--forest-d);color:#CFE0D4;padding:3rem 0 1.5rem;font-size:.98rem}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
+footer h3{color:var(--white);font-size:1.05rem}
+footer ul{list-style:none;padding:0;display:grid;gap:.35rem}
+footer a{text-decoration:none}footer a:hover{color:var(--leaf);text-decoration:underline}
+.flogo{border-radius:50%;margin-bottom:.8rem}
+.copy{border-top:1px solid #2A5340;margin-top:2rem;padding-top:1rem;font-size:.9rem}
+/* dynamic */
+.sbar{position:fixed;top:0;left:0;height:4px;width:100%;background:#fff;transform:scaleX(0);transform-origin:left;z-index:99}
+.hero{position:relative}
+.hero .wrap{position:relative;z-index:1}
+.ripple{position:absolute;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;border:2px solid var(--leaf);pointer-events:none;animation:rip .9s ease-out forwards}
+@keyframes rip{to{transform:scale(14);opacity:0}}
+.net{transition:transform .25s ease-out}
+.net circle:not(.big){transition:transform .25s;transform-box:fill-box;transform-origin:center;cursor:pointer}
+.net circle:not(.big):hover,.net circle:not(.big):active{transform:scale(1.9)}
+.mq{background:var(--leaf);color:var(--forest-d);overflow:hidden;padding:.85rem 0;white-space:nowrap}
+.track{display:inline-flex;animation:mq 32s linear infinite}
+.mq:hover .track,.mq:active .track{animation-play-state:paused}
+.track span{font-family:var(--h);font-weight:700;font-size:1.15rem;padding:0 1.4rem;display:inline-flex;align-items:center;gap:2.8rem;cursor:default;transition:color .2s}
+.track span::after{content:"";width:9px;height:9px;border-radius:50%;background:var(--forest)}
+.track span:hover{color:var(--white)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.card{transition:transform .25s,box-shadow .25s,border-color .25s}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+.card:hover,.card:focus-within{transform:translateY(-6px);box-shadow:0 14px 30px rgba(20,71,46,.16);border-color:var(--leaf)}
+.card:active{transform:scale(.98)}
+.card:hover .ic{background:var(--forest);color:#fff}
+.road article{transition:transform .25s,background .25s}
+.road article:hover{transform:translateY(-6px);background:#303636}
+.pillars li{transition:background .2s,color .2s,transform .2s;cursor:default}
+.pillars li:hover,.pillars li:active{background:var(--leaf);color:var(--black);transform:scale(1.06)}
+.words span{transition:background .2s,color .2s,transform .2s}
+.words span:hover,.words span:active{background:var(--leaf);color:var(--black);transform:translateY(-3px)}
+.avatar{transition:transform .3s,border-color .3s}
+.person:hover .avatar,.person:active .avatar{transform:scale(1.08);border-color:var(--leaf)}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:scale(.96)}
+header{transition:box-shadow .3s}header.sc{box-shadow:0 6px 20px rgba(0,0,0,.35)}
+/* gallery */
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.6rem 0}
+.chip{font:inherit;font-weight:600;padding:.5rem 1.1rem;border-radius:999px;border:2px solid var(--forest);background:none;color:var(--forest);cursor:pointer;transition:background .2s,color .2s}
+.chip:hover,.chip[aria-pressed=true]{background:var(--forest);color:var(--white)}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:1rem}
+.g{position:relative;aspect-ratio:4/3;border:0;border-radius:14px;overflow:hidden;cursor:pointer;color:var(--white);font:inherit;text-align:left;padding:0;background:linear-gradient(135deg,var(--c,var(--forest)),var(--forest-d));transition:transform .25s,box-shadow .25s}
+.g[data-cat=training]{--c:#1A1A1A}.g[data-cat=community]{--c:#4A5658}
+.g img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.g::before{content:"";position:absolute;right:-30px;top:-30px;width:120px;height:120px;border-radius:50%;background:var(--leaf);opacity:.25;transition:transform .4s}
+.g:hover{transform:translateY(-5px);box-shadow:0 14px 28px rgba(20,71,46,.25)}
+.g:hover::before{transform:scale(1.5)}
+.g:active{transform:scale(.97)}
+.g span{position:absolute;left:0;right:0;bottom:0;padding:2rem 1rem .9rem;background:linear-gradient(transparent,rgba(0,0,0,.7));font-weight:600}
+.g[hidden]{display:none}
+.lb{position:fixed;inset:0;background:rgba(9,20,14,.94);z-index:120;display:grid;place-items:center;padding:1rem}
+.lb[hidden]{display:none}
+.lbc{width:min(900px,100%);text-align:center;color:var(--white)}
+.lbm{aspect-ratio:4/3;border-radius:14px;background:linear-gradient(135deg,var(--forest),var(--forest-d));display:grid;place-items:center;overflow:hidden;font-family:var(--h);font-size:1.6rem}
+.lbm img{width:100%;height:100%;object-fit:contain}
+.lbb{position:absolute;background:var(--leaf);color:var(--black);border:0;border-radius:999px;font:inherit;font-weight:700;padding:.7rem 1.1rem;cursor:pointer}
+.lbb.x{top:1rem;right:1rem}.lbb.p{left:1rem;top:50%}.lbb.n{right:1rem;top:50%}
+/* contact */
+.cgrid{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(1.5rem,4vw,4rem)}
+.cinfo ul{list-style:none;padding:0;display:grid;gap:.9rem;margin-top:1.4rem}
+.cinfo b{display:block;color:var(--forest)}
+.cinfo a{text-decoration:none}.cinfo a:hover{text-decoration:underline}
+form{display:grid;gap:1rem;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:clamp(1.2rem,3vw,2rem)}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+label{font-weight:600;display:grid;gap:.35rem;font-size:.98rem}
+input,select,textarea{font:inherit;padding:.75rem .9rem;border:1.5px solid #B9C2BC;border-radius:10px;background:var(--white);color:var(--black);width:100%}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--forest);border-color:var(--forest)}
+input:user-invalid,textarea:user-invalid{border-color:#B3261E}
+textarea{min-height:140px;resize:vertical}
+.fs{min-height:1.5rem;font-weight:600;color:var(--forest)}
+.soc{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.4rem}
+.soc a{border:2px solid var(--forest);color:var(--forest);padding:.3rem .95rem;border-radius:999px;font-weight:600;transition:background .2s,color .2s,transform .2s}
+.soc a:hover{background:var(--forest);color:#fff;text-decoration:none;transform:translateY(-2px)}
+/* logo accents: yellow and red, used sparingly */
+.btn-y{background:var(--yellow);color:var(--black)}.btn-y:hover{background:var(--white)}
+h2::after{content:"";display:block;width:64px;height:5px;margin-top:.8rem;border-radius:3px;background:linear-gradient(90deg,var(--yellow) 0 72%,var(--red) 72% 100%)}
+.join h2::after{margin-inline:auto}
+nav a:hover{border-color:var(--yellow)}
+.net circle.y{fill:var(--yellow)}.net circle.r{fill:var(--red)}
+.story strong{background:linear-gradient(transparent 62%,rgba(251,197,11,.55) 62%)}
+.person:hover .avatar,.person:active .avatar{border-color:var(--yellow)}
+input:user-invalid,textarea:user-invalid{border-color:var(--red)}
+.top{position:fixed;right:1rem;bottom:1rem;width:46px;height:46px;border-radius:50%;border:0;background:var(--forest);color:#fff;font-size:1.3rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s,transform .2s;z-index:60}
+.top.on{opacity:1;pointer-events:auto}.top:hover{transform:translateY(-3px)}
+/* depth */
+:root{--wm:url(assets/emblem-mosaic.png)}
+.wm{position:relative;overflow:hidden;isolation:isolate;--t:256px}
+.wm::before{content:"";position:absolute;inset:0;background:var(--wm) 0 0/var(--t) var(--t) repeat;opacity:.06;z-index:-1;pointer-events:none;-webkit-mask-image:radial-gradient(120% 110% at 100% 0,#000 8%,transparent 78%);mask-image:radial-gradient(120% 110% at 100% 0,#000 8%,transparent 78%)}
+.hero{background:radial-gradient(900px 520px at 85% 10%,rgba(255,255,255,.16),transparent 62%),radial-gradient(800px 600px at 0% 100%,rgba(8,64,16,.75),transparent 70%),var(--forest)}
+.hero.wm::before{opacity:.10;animation:drift 90s linear infinite}
+@keyframes drift{to{background-position:var(--t) var(--t)}}
+.dark{background:radial-gradient(800px 420px at 90% 0%,rgba(0,107,63,.38),transparent 65%),var(--black)}
+.dark.wm::before{opacity:.05;-webkit-mask-image:radial-gradient(120% 110% at 0 100%,#000 8%,transparent 78%);mask-image:radial-gradient(120% 110% at 0 100%,#000 8%,transparent 78%)}
+.join{background:radial-gradient(700px 400px at 50% 0%,rgba(255,255,255,.14),transparent 65%),linear-gradient(160deg,var(--forest),var(--forest-d))}
+.join.wm::before{opacity:.08;-webkit-mask-image:radial-gradient(120% 110% at 50% 0,#000 8%,transparent 78%);mask-image:radial-gradient(120% 110% at 50% 0,#000 8%,transparent 78%)}
+footer.wm::before{opacity:.05}
+.alt{background:radial-gradient(700px 320px at 8% 0%,rgba(0,107,63,.09),transparent 70%),var(--gray-l)}
+.card{box-shadow:0 1px 2px rgba(8,64,16,.06),0 10px 26px rgba(8,64,16,.07)}
+.net{filter:drop-shadow(0 18px 28px rgba(0,0,0,.28))}
+.band{background:radial-gradient(700px 420px at 100% 0%,rgba(255,255,255,.12),transparent 65%),linear-gradient(135deg,var(--forest-d),var(--forest));color:var(--white)}
+.band h2{color:#fff}.band p{color:#DCEBE0}
+.bandg{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.ph3{position:relative;margin:0 18px 22px 0}
+.frame{position:relative;border-radius:18px;transition:transform .5s;transform:perspective(1400px) rotateY(-3deg)}
+.frame:hover{transform:none}
+.frame::before{content:"";position:absolute;inset:16px -16px -16px 16px;border-radius:18px;border:2px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);z-index:-1}
+.frame img{width:100%;height:auto;border-radius:18px;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.ph3 figcaption{position:absolute;left:14px;bottom:-12px;background:var(--white);color:var(--forest-d);font-weight:600;font-size:.9rem;padding:.45rem .9rem;border-radius:999px;box-shadow:0 8px 20px rgba(0,0,0,.3)}
+@media(max-width:860px){
+ .menu{display:block}
+ nav{position:absolute;left:0;right:0;top:68px;background:var(--forest-d);display:none;padding:1rem 1.25rem 1.5rem}
+ nav.open{display:block}
+ nav ul{flex-direction:column;gap:.4rem}
+ nav a{display:block;padding:.7rem 0}
+ .hero .wrap,.two,.fgrid,.cgrid,.f2,.bandg{grid-template-columns:1fr}
+ .road{grid-template-columns:1fr 1fr}
+ .net{max-width:320px;margin-inline:auto}
+ .wm{--t:176px}
+}
+@media(max-width:520px){.road{grid-template-columns:1fr}.actions .btn{width:100%;text-align:center}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pulse,.track,.ripple,.hero.wm::before{animation:none}.mq{overflow-x:auto}.rv{opacity:1;transform:none;transition:none}}
+/* rebalance: green as an accent, more white, black and gray */
+header{background:var(--white);color:var(--black);border-bottom:1px solid var(--line)}
+header.sc{box-shadow:0 6px 20px rgba(0,0,0,.12)}
+.brand{color:var(--forest-d)}
+.menu{border-color:var(--forest);color:var(--forest)}
+nav a:hover{border-color:var(--forest)}
+.sbar{background:var(--forest)}
+@media(max-width:860px){nav{background:var(--white);border-bottom:1px solid var(--line);box-shadow:0 12px 24px rgba(0,0,0,.1)}}
+.card h3{color:var(--black)}
+.words span{background:var(--black)}
+.story blockquote{color:var(--black)}
+.band{background:radial-gradient(700px 420px at 100% 0%,rgba(0,107,63,.09),transparent 65%),linear-gradient(180deg,var(--white),var(--gray-l));color:var(--black)}
+.band h2{color:var(--black)}.band p{color:var(--gray)}
+.frame::before{border-color:rgba(0,107,63,.4);background:rgba(0,107,63,.08)}
+.frame img{box-shadow:0 26px 50px rgba(8,64,16,.28)}
+.join{background:var(--white)}
+.join .wrap{background:radial-gradient(700px 400px at 50% 0%,rgba(255,255,255,.14),transparent 65%),linear-gradient(160deg,var(--forest),var(--forest-d));color:#fff;border-radius:28px;padding:clamp(2.5rem,6vw,4.5rem) clamp(1.2rem,4vw,3rem)}
+.join .wm::before{opacity:.09}
+footer{background:var(--black);color:#C9CFCB}
+.copy{border-color:#333}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="sbar" id="sbar" aria-hidden="true"></div>
+<header id="hd">
+ <div class="wrap bar">
+  <a class="brand" href="#top" aria-label="GECG home"><img class="mark" src="assets/logo-sm.png" alt="" width="44" height="44">GECG</a>
+  <button class="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Main">
+   <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#what-we-do">What we do</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#programmes">Programmes</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#team">Leadership</a></li>
+    <li><a href="#contact">Contact</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+
+<main id="main">
+<section class="hero wm" id="top">
+ <div class="wrap">
+  <div>
+   <p class="tag">Structure. Support. Connect. Promote. Engage.</p>
+   <h1>Gabonese Entrepreneurs Club in Ghana</h1>
+   <p class="lead">Empowering Gabonese entrepreneurs. Connecting opportunities. Building economic impact.</p>
+   <div class="actions">
+    <a class="btn btn-y" href="#join">Join us</a>
+    <a class="btn btn-line" href="#join">Partner with us</a>
+   </div>
+  </div>
+  <svg class="net" viewBox="0 0 300 300" role="img" aria-label="Network of connected entrepreneurs">
+   <g><line x1="150" y1="150" x2="60" y2="60"/><line x1="150" y1="150" x2="245" y2="70"/><line x1="150" y1="150" x2="250" y2="200"/><line x1="150" y1="150" x2="90" y2="250"/><line x1="150" y1="150" x2="40" y2="170"/><line x1="60" y1="60" x2="245" y2="70"/><line x1="250" y1="200" x2="90" y2="250"/><line x1="40" y1="170" x2="60" y2="60"/></g>
+   <circle class="big pulse" cx="150" cy="150" r="20"/>
+   <circle cx="60" cy="60" r="11"/><circle class="y" cx="245" cy="70" r="14"/><circle cx="250" cy="200" r="10"/><circle class="r" cx="90" cy="250" r="13"/><circle cx="40" cy="170" r="9"/>
+  </svg>
+ </div>
+</section>
+
+<div class="mq" aria-label="Entrepreneurship themes"><div class="track" id="track">
+ <span>Business</span><span>Innovation</span><span>Startups</span><span>Investment</span><span>Mentorship</span><span>Formalisation</span><span>Networking</span><span>Partnerships</span><span>Funding</span><span>Growth</span><span>Leadership</span><span>Impact</span>
+</div></div>
+
+<section id="about">
+ <div class="wrap two">
+  <div>
+   <h2>Building a stronger entrepreneurial community</h2>
+   <p>GECG is a platform that brings Gabonese entrepreneurs together, strengthens their businesses and creates meaningful connections in Ghana's business ecosystem.</p>
+   <p style="margin-top:1rem">Founded in 2020, the club builds on a community of Gabonese entrepreneurs with experience in business, networking and community initiatives.</p>
+   <div class="words" aria-label="Our four actions"><span>Support</span><span>Connect</span><span>Promote</span><span>Engage</span></div>
+  </div>
+  <div class="vm">
+   <div><h3>Our vision</h3><p>A structured, visible and influential entrepreneurial ecosystem.</p></div>
+   <div><h3>Our mission</h3><p>An organised entrepreneurial network with clear governance, departments, responsibilities and participation.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="band wm" id="together">
+ <div class="wrap bandg">
+  <figure class="ph3">
+   <div class="frame"><img src="assets/gallery/team-accra.jpg" alt="GECG members in Accra holding the club's welcome banner for the President of Gabon" width="960" height="600" loading="lazy"></div>
+   <figcaption>GECG members, Accra</figcaption>
+  </figure>
+  <div>
+   <h2>Together we are stronger</h2>
+   <p>From scattered initiatives to one visible community: members, partners and leaders standing side by side to open doors for Gabonese entrepreneurs in Ghana.</p>
+   <div class="actions"><a class="btn btn-forest" href="#gallery">See the gallery</a><a class="btn btn-out" href="#contact">Join us</a></div>
+  </div>
+ </div>
+</section>
+
+<section class="alt" id="what-we-do">
+ <div class="wrap">
+  <h2>Creating the conditions for entrepreneurs to grow</h2>
+  <p>GECG focuses on the practical needs of entrepreneurs while building a stronger community around them.</p>
+  <div class="grid">
+   <article class="card"><div class="ic" aria-hidden="true">S</div><h3>Entrepreneurial support</h3><p>Access to useful information, mentoring, training and business development support.</p></article>
+   <article class="card"><div class="ic" aria-hidden="true">F</div><h3>Business formalisation</h3><p>Help moving towards legally registered and properly structured businesses.</p></article>
+   <article class="card"><div class="ic" aria-hidden="true">T</div><h3>Training and mentorship</h3><p>Practical business knowledge, skills and experience for entrepreneurs and young people.</p></article>
+   <article class="card"><div class="ic" aria-hidden="true">V</div><h3>Business visibility</h3><p>Platforms to showcase Gabonese products, services and achievements.</p></article>
+   <article class="card"><div class="ic" aria-hidden="true">P</div><h3>Partnerships</h3><p>Strategic relationships with institutions, businesses, investors and other networks.</p></article>
+   <article class="card"><div class="ic" aria-hidden="true">D</div><h3>Digitalisation</h3><p>Digital tools, databases and channels that make support easier to reach.</p></article>
+  </div>
+  <div class="actions"><a class="btn btn-forest" href="#join">Become a member</a></div>
+ </div>
+</section>
+
+<section class="dark wm" id="roadmap">
+ <div class="wrap">
+  <h2>Five pillars. A 24-month roadmap.</h2>
+  <p>The Renaissance Plan gives GECG a clear path from structure to sustainability.</p>
+  <ul class="pillars">
+   <li>Structure &amp; governance</li><li>Information &amp; access</li><li>Support &amp; development</li><li>Partnerships &amp; visibility</li><li>Ethics, engagement &amp; solidarity</li>
+  </ul>
+  <div class="road">
+   <article><div class="ph"></div><h3>Diagnosis &amp; foundations</h3><p>Database, entrepreneur census, organisational structures, departments, communication and partnerships.</p></article>
+   <article><div class="ph"></div><h3>Visibility &amp; first services</h3><p>Website, Boma Tag, Entrepreneur's Manual beta, formalisation, training and visibility campaigns.</p></article>
+   <article><div class="ph"></div><h3>Services &amp; financing</h3><p>Wider services, partnerships, financing mechanisms and the Gabonese Business Challenge.</p></article>
+   <article><div class="ph"></div><h3>Local presence &amp; sustainability</h3><p>A physical hub with headquarters, coworking, incubation, forums and lasting institutional footing.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="story" id="story">
+ <div class="wrap two">
+  <div>
+   <h2>Our story</h2>
+   <blockquote>Far from home, we were many, talented and ambitious, but scattered. One woman saw that our strength would come from uniting.</blockquote>
+  </div>
+  <div>
+   <p>In 2020, Mrs. Ghislaine looked around and asked a simple question: what if we became one? A team with heart was ready to carry the idea, and the Gabonese Entrepreneurs Club was born: a home and a family for Gabonese builders on Ghanaian soil.</p>
+   <p>Leaders such as Mr. Ruben Tomo and Sir Obame carried the torch. Mrs. Sabrina then led the club from 2021 to 2026, growing it despite the challenges.</p>
+   <h3>A new chapter</h3>
+   <p>Today the club is led by President Dancy Odjinobo, with a concrete and ambitious plan: turn GECG from a community into an engine of opportunity, success and impact for every Gabonese entrepreneur in Ghana.</p>
+   <p><strong>Even far from Gabon, Gabon remains united. Welcome home.</strong></p>
+  </div>
+ </div>
+</section>
+
+<section class="alt prog" id="programmes">
+ <div class="wrap">
+  <h2>Programmes that turn ideas into opportunities</h2>
+  <p>Each programme answers a real challenge faced by entrepreneurs.</p>
+  <div class="grid">
+   <article class="card"><h3>Boma Tag</h3><p class="sub">Discover. Map. Connect.</p><p>Identifies and promotes Gabonese businesses in Ghana through referencing and digital mapping, including Google Maps.</p></article>
+   <article class="card"><h3>Boma Care</h3><p class="sub">Supporting our community.</p><p>A solidarity initiative that responds to the needs of the community and strengthens mutual support.</p></article>
+   <article class="card"><h3>One Company / Month</h3><p class="sub">One business. One step forward.</p><p>Supports at least one entrepreneur every month towards legal registration and formalisation.</p></article>
+   <article class="card"><h3>Invest in Gabon</h3><p class="sub">Ghanaian opportunities meet Gabonese potential.</p><p>Investment links with Gabon through information, forums, webinars, partnerships and practical resources.</p></article>
+   <article class="card"><h3>GBC Fund: Gabonese Business Challenge</h3><p class="sub">Ideas. Innovation. Investment.</p><p>An annual pitch challenge offering seed funding, mentorship, evaluation, exposure and business networks.</p></article>
+   <article class="card"><h3>Entrepreneur Spotlight</h3><p class="sub">One month. One entrepreneur. One story.</p><p>Highlights Gabonese entrepreneurs, their businesses, achievements and journeys.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="gallery">
+ <div class="wrap">
+  <h2>Moments of engagement and connection</h2>
+  <p>Events, training and community life at GECG. Select a photo to enlarge it.</p>
+  <div class="chips" role="group" aria-label="Filter gallery">
+   <button class="chip" data-f="all" aria-pressed="true">All</button>
+   <button class="chip" data-f="events" aria-pressed="false">Events</button>
+   <button class="chip" data-f="training" aria-pressed="false">Training</button>
+   <button class="chip" data-f="community" aria-pressed="false">Community</button>
+  </div>
+  <!-- Pour ajouter une vraie photo : ajouter data-src="assets/gallery/photo1.jpg" sur le bouton -->
+  <div class="gal" id="gal">
+   <button class="g" data-cat="events" data-src="assets/gallery/team-accra.jpg" data-cap="GECG members in Accra"><span>GECG members in Accra</span></button>
+   <button class="g" data-cat="training" data-cap="Training session"><span>Training session</span></button>
+   <button class="g" data-cat="community" data-cap="Community gathering"><span>Community gathering</span></button>
+   <button class="g" data-cat="events" data-cap="Business forum"><span>Business forum</span></button>
+   <button class="g" data-cat="training" data-cap="Mentorship workshop"><span>Mentorship workshop</span></button>
+   <button class="g" data-cat="community" data-cap="Boma Care outreach"><span>Boma Care outreach</span></button>
+   <button class="g" data-cat="events" data-cap="Partner meeting"><span>Partner meeting</span></button>
+   <button class="g" data-cat="community" data-cap="Members together"><span>Members together</span></button>
+  </div>
+ </div>
+</section>
+
+<section id="team">
+ <div class="wrap">
+  <h2>Meet our leadership</h2>
+  <p>A dedicated team strengthening the community and advancing GECG's vision across Ghana, Gabon and Africa.</p>
+  <div class="team">
+   <div class="person"><div class="avatar"><img src="assets/team/dancy.jpg" alt="Dancy Odjinobo" width="360" height="360" loading="lazy"></div><h3>Dancy Odjinobo</h3><p>President</p></div>
+   <div class="person"><div class="avatar"><img src="assets/team/bermau.jpg" alt="Rid Bermau M. Loembet" width="360" height="360" loading="lazy"></div><h3>Rid Bermau M. Loembet</h3><p>Vice President</p></div>
+   <div class="person"><div class="avatar"><img src="assets/team/melissa.jpg" alt="Shearon Mélissa Mboumba M." width="360" height="360" loading="lazy"></div><h3>Shearon Mélissa Mboumba M.</h3><p>Head of Communication</p></div>
+   <div class="person"><div class="avatar"><img src="assets/team/samie.jpg" alt="Samie Lea" width="360" height="360" loading="lazy"></div><h3>Samie Lea</h3><p>Assistant Head of Communication and PR</p></div>
+   <div class="person"><div class="avatar"><img src="assets/team/oliver.jpg" alt="Olivier Okawe" width="360" height="360" loading="lazy"></div><h3>Olivier Okawe</h3><p>Marketing</p></div>
+   <div class="person"><div class="avatar"><img src="assets/team/zime.jpg" alt="Glenn Nzime" width="360" height="360" loading="lazy"></div><h3>Glenn Nzime</h3><p>General Secretary</p></div>
+   <div class="person"><div class="avatar"><img src="assets/team/droyi.jpg" alt="Droyi Matsayi" width="360" height="360" loading="lazy"></div><h3>Droyi Matsayi</h3><p>Head of Finance</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="join" id="join">
+ <div class="wrap wm">
+  <h2>Join the movement</h2>
+  <p>Established entrepreneur, growing business owner, young founder, partner or supporting organisation: there is a place for you at GECG.</p>
+  <div class="actions">
+   <a class="btn btn-y" href="#contact" data-topic="Membership">Register today</a>
+   <a class="btn btn-line" href="#contact" data-topic="Partnership">Partner with us</a>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap cgrid">
+  <div class="cinfo">
+   <h2>Get in touch</h2>
+   <p>Ask about membership, propose a partnership or send us a question. We read every message.</p>
+   <ul>
+    <li><b>Phone</b><a href="tel:+233543807474">+233 54 380 7474</a><br><a href="tel:+233202154318">+233 20 215 4318</a></li>
+    <li><b>Email</b><a href="mailto:info@gecg.org">info@gecg.org</a></li>
+    <li><b>Location</b>Accra, Ghana</li>
+    <li><b>Follow us</b><span class="soc"><a href="https://www.facebook.com/share/18ZN7YF8Z7/" rel="noopener" target="_blank">Facebook</a><a href="https://www.instagram.com/gaboneseentrepreneursingh/" rel="noopener" target="_blank">Instagram</a><a href="https://www.linkedin.com/company/gabonese-entrepreneurs-club-in-ghana/" rel="noopener" target="_blank">LinkedIn</a><a href="https://www.tiktok.com/@gabonese.entrepre" rel="noopener" target="_blank">TikTok</a></span></li>
+   </ul>
+  </div>
+  <form id="cf" novalidate>
+   <div class="f2">
+    <label>Full name<input name="name" autocomplete="name" required></label>
+    <label>Email<input name="email" type="email" autocomplete="email" required></label>
+   </div>
+   <div class="f2">
+    <label>Phone (optional)<input name="phone" type="tel" autocomplete="tel"></label>
+    <label>Topic<select name="topic"><option>Membership</option><option>Partnership</option><option>Training and mentorship</option><option>Media</option><option>General question</option></select></label>
+   </div>
+   <label>Message<textarea name="msg" required></textarea></label>
+   <button class="btn btn-forest" type="submit">Send message</button>
+   <p class="fs" id="fs" role="status" aria-live="polite"></p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="wm">
+ <div class="wrap">
+  <div class="fgrid">
+   <div><img class="flogo" src="assets/logo-sm.png" alt="" width="72" height="72"><h3>Gabonese Entrepreneurs Club in Ghana</h3><p>Moving from isolated initiatives to a structured, visible and sustainable platform for Gabonese entrepreneurs.</p></div>
+   <div><h3>Contact</h3><ul>
+    <li><a href="tel:+233543807474">+233 54 380 7474</a></li>
+    <li><a href="tel:+233202154318">+233 20 215 4318</a></li>
+    <li><a href="mailto:info@gecg.org">info@gecg.org</a></li>
+    <li>Accra, Ghana</li></ul></div>
+   <div><h3>Follow us</h3><ul>
+    <li><a href="https://www.facebook.com/share/18ZN7YF8Z7/" rel="noopener" target="_blank">Facebook: Club des entrepreneurs gabonais du Ghana</a></li>
+    <li><a href="https://www.instagram.com/gaboneseentrepreneursingh/" rel="noopener" target="_blank">Instagram: Gabonese entrepreneurs in Ghana</a></li>
+    <li><a href="https://www.linkedin.com/company/gabonese-entrepreneurs-club-in-ghana/" rel="noopener" target="_blank">LinkedIn: Gabonese Entrepreneurs Club in Ghana</a></li>
+    <li><a href="https://www.tiktok.com/@gabonese.entrepre" rel="noopener" target="_blank">TikTok: Gabonese entrepreneurs club gh</a></li></ul></div>
+  </div>
+  <p class="copy">© 2026 Gabonese Entrepreneurs Club in Ghana. All rights reserved.</p>
+ </div>
+</footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+ <button class="lbb x" id="lbx">Close</button>
+ <button class="lbb p" id="lbp" aria-label="Previous photo">&#8592;</button>
+ <button class="lbb n" id="lbn" aria-label="Next photo">&#8594;</button>
+ <div class="lbc"><div class="lbm" id="lbm"></div><p id="lbc" style="margin-top:1rem;font-weight:600"></p></div>
+</div>
+<button class="top" id="top2" aria-label="Back to top">&#8593;</button>
+
+<script>
+(function(){
+ /* galerie : filtres + visualiseur */
+ var tiles=[].slice.call(document.querySelectorAll('.g')),lb=document.getElementById('lb'),cur=0,vis=[];
+ [].forEach.call(document.querySelectorAll('.chip'),function(c){c.addEventListener('click',function(){
+  [].forEach.call(document.querySelectorAll('.chip'),function(o){o.setAttribute('aria-pressed',o===c)});
+  tiles.forEach(function(t){t.hidden=c.dataset.f!=='all'&&t.dataset.cat!==c.dataset.f});
+ })});
+ tiles.forEach(function(t){
+  if(t.dataset.src){var im=new Image();im.src=t.dataset.src;im.alt=t.dataset.cap;t.prepend(im)}
+  t.addEventListener('click',function(){vis=tiles.filter(function(x){return !x.hidden});show(vis.indexOf(t))});
+ });
+ function show(i){
+  cur=(i+vis.length)%vis.length;var t=vis[cur],m=document.getElementById('lbm');
+  m.innerHTML='';
+  if(t.dataset.src){var im=new Image();im.src=t.dataset.src;im.alt=t.dataset.cap;m.appendChild(im)}else{m.textContent='Photo coming soon'}
+  document.getElementById('lbc').textContent=t.dataset.cap;lb.hidden=false;document.getElementById('lbx').focus();
+ }
+ function close(){lb.hidden=true}
+ document.getElementById('lbx').onclick=close;
+ document.getElementById('lbp').onclick=function(){show(cur-1)};
+ document.getElementById('lbn').onclick=function(){show(cur+1)};
+ lb.addEventListener('click',function(e){if(e.target===lb)close()});
+ document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+ /* boutons d'adhésion : présélectionnent le sujet du formulaire */
+ [].forEach.call(document.querySelectorAll('[data-topic]'),function(a){a.addEventListener('click',function(){document.querySelector('[name=topic]').value=a.dataset.topic})});
+ /* formulaire : validation puis ouverture du mail prérempli */
+ var cf=document.getElementById('cf'),fs=document.getElementById('fs');
+ cf.addEventListener('submit',function(e){
+  e.preventDefault();
+  if(!cf.checkValidity()){fs.style.color='var(--red)';fs.textContent='Please fill in your name, a valid email and your message.';cf.reportValidity();return}
+  var d=new FormData(cf),body='Name: '+d.get('name')+'\nEmail: '+d.get('email')+'\nPhone: '+(d.get('phone')||'-')+'\n\n'+d.get('msg');
+  fs.style.color='';fs.textContent='Opening your email app. If nothing opens, write to info@gecg.org.';
+  location.href='mailto:info@gecg.org?subject='+encodeURIComponent('GECG website: '+d.get('topic'))+'&body='+encodeURIComponent(body);
+ });
+ /* retour en haut */
+ var tp=document.getElementById('top2');
+ tp.onclick=function(){window.scrollTo({top:0,behavior:'smooth'})};
+ window.addEventListener('scroll',function(){tp.classList.toggle('on',window.scrollY>600)},{passive:true});
+ var b=document.querySelector('.menu'),n=document.getElementById('nav');
+ b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+ n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+ var calm=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+ /* bandeau : on double la liste pour une boucle continue */
+ var t=document.getElementById('track');
+ if(!calm){t.innerHTML+=t.innerHTML}
+ /* hero : onde au toucher/clic + le réseau suit le doigt ou la souris */
+ var hero=document.querySelector('.hero'),net=document.querySelector('.net');
+ hero.addEventListener('pointerdown',function(e){
+  if(calm)return;var r=hero.getBoundingClientRect(),s=document.createElement('span');
+  s.className='ripple';s.style.left=(e.clientX-r.left)+'px';s.style.top=(e.clientY-r.top)+'px';
+  hero.appendChild(s);s.addEventListener('animationend',function(){s.remove()});
+ });
+ hero.addEventListener('pointermove',function(e){
+  if(calm)return;var r=hero.getBoundingClientRect();
+  var x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+  net.style.transform='translate('+(x*26)+'px,'+(y*26)+'px)';
+ });
+ hero.addEventListener('pointerleave',function(){net.style.transform=''});
+ /* apparition douce des cartes au défilement */
+ if('IntersectionObserver' in window&&!calm){
+  var io=new IntersectionObserver(function(l){l.forEach(function(i){if(i.isIntersecting){i.target.classList.add('in');io.unobserve(i.target)}})},{threshold:.15});
+  document.querySelectorAll('.card,.road article,.person,.vm div').forEach(function(el,k){el.classList.add('rv');el.style.transitionDelay=(k%3)*80+'ms';io.observe(el)});
+ }
+ /* barre de progression + ombre de l'en-tête */
+ var sb=document.getElementById('sbar'),hd=document.getElementById('hd');
+ function sc(){var h=document.documentElement,p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);sb.style.transform='scaleX('+p+')';hd.classList.toggle('sc',h.scrollTop>10)}
+ window.addEventListener('scroll',sc,{passive:true});sc();
+})();
+</script>
+</body>
+</html>
